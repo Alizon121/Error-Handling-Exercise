@@ -7,21 +7,25 @@ function sum(array) {
   return sum;
 }
 
-let res = sum(null);
-console.log(res);
+// The try .. catch block allows us to test a statement that may print an error without the stopping execution of all code.
+try {let res = sum(null);
+console.log(res);}
+catch {
+  console.error("Error occurred")
+}
 
 // 2.
 // tests
 sayName("Alex");
 sayName(1);
-// Your code here 
+
 
 // 3.
-function greet(greeting) {
-  if (!greeting) {
-    throw new Error("There was no greeting given.");
-  }
+//function greet(greeting) {
+  //if (!greeting) {
+    //throw new Error("There was no greeting given.");
+  //}
 
-  console.log(greeting);
-}
+  //console.log(greeting);
+//}
 
