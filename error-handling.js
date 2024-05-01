@@ -34,11 +34,23 @@ return name
 
 
 // 3.
-//function greet(greeting) {
-  //if (!greeting) {
-    //throw new Error("There was no greeting given.");
-  //}
+function greet(greeting) {
+  if (!greeting) {
+    throw new Error("There was no greeting given.");
+  }
 
-  //console.log(greeting);
-//}
+  console.log(greeting);
+}
 
+
+// Passsing in a falsy statement will result in the function printing an error.
+
+try {
+  greet(null);
+  // greet(0);
+  // greet("")
+}
+catch (error) {
+console.log(error.name + ": " + error.message)
+}
+console.log("hello World!")
